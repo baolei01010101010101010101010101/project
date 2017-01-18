@@ -1,0 +1,11 @@
+create database usercenter DEFAULT CHARACTeR SET utf8 COLLATE utf8_general_ci;
+use usercenter;
+CREATE TABLE `t_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user` char(20) NOT NULL,
+  `mail` char(40) NOT NULL,
+  `mobile` char(11) NOT NULL,
+  `secret` char(20) NOT NULL,
+  `name` char(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5901 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
